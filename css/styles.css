@@ -95,21 +95,21 @@ img {
 .socials-list,
 .partner-list,
 .address-list,
-.category-list,
+.sort-list,
 .portfolio-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.logo,
 .site-nav__link,
 .contacts__link,
-.logo,
 .page-footer__logo,
 .partner-list__link,
 .socials-list__link,
-.modal-form__link,
 .address-list__link,
+.modal-form__link,
 .portfolio-list__link {
   color: var(--primary-text-color);
 }
@@ -801,7 +801,7 @@ img {
   background-color: var(--button-secondary-color);
 }
 
-/* Styles for portfolio.html */
+/* Sort-list section */
 
 .sort-list {
   display: flex;
@@ -810,7 +810,7 @@ img {
   gap: 8px;
 }
 
-.sort-list-button {
+.sort-list__button {
   padding: 6px 22px;
 
   background-color: var(--secondary-background);
@@ -830,8 +830,8 @@ img {
     box-shadow 250ms var(--transition);
 }
 
-.sort-list-button:hover,
-.sort-list-button:focus {
+.sort-list__button:hover,
+.sort-list__button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -846,30 +846,30 @@ img {
   gap: var(--indent);
 }
 
-.portfolio-link {
+.portfolio-list__link {
   display: inline-block;
   text-decoration: none;
 
   transition: box-shadow 250ms var(--transition);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-list__link:hover,
+.portfolio-list__link:focus {
   box-shadow: 4px 4px 6px rgb(0 0 0 / 12%), 2px 1px 5px rgb(0 0 0 / 14%),
     5px 3px 7px rgb(0 0 0 / 20%);
 }
 
-.portfolio-link:hover .text-overlay,
-.portfolio-link:focus .text-overlay {
+.portfolio-list__link:hover .portfolio-list__desc,
+.portfolio-list__link:focus .portfolio-list__desc {
   transform: translateY(0);
 }
 
-.overlay {
+.portfolio-list__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.text-overlay {
+.portfolio-list__desc {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -889,14 +889,14 @@ img {
   transition: transform 250ms var(--transition);
 }
 
-.portfolio-text-container {
+.portfolio-list__meta {
   padding: 20px 24px;
   border-right: 1px solid var(--border-primary-color);
   border-bottom: 1px solid var(--border-primary-color);
   border-left: 1px solid var(--border-primary-color);
 }
 
-.portfolio-title {
+.portfolio-list__title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -905,7 +905,7 @@ img {
   margin-bottom: 4px;
 }
 
-.portfolio-text {
+.portfolio-list__text {
   color: var(--secondary-text-color);
 
   font-size: 16px;
