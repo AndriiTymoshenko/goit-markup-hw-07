@@ -1,0 +1,11 @@
+.page-footer {
+  background-color: $dark-background;
+  padding: 60px 0;
+}
+
+.page-footer__container {
+  @extend .container;
+
+  display: flex;
+  align-items: baseline;
+}

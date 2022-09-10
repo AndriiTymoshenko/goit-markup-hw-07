@@ -1,0 +1,30 @@
+.section-about {
+  padding-top: 0;
+}
+
+.about-list {
+  @extend %list;
+  display: flex;
+  gap: $indent;
+}
+
+.about-list__item {
+  position: relative;
+}
+
+.about-list__title {
+  @include centeredFlex;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background-color: $opacity-background-color;
+  color: $primary-white-color;
+}
