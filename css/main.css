@@ -1043,7 +1043,7 @@ img {
   border-radius: 2px;
 }
 
-.modal-form__checkbox:checked > .modal-form__checkbox--custom {
+.modal-form__checkbox:checked + .modal-form__checkbox--custom {
   background-color: #2196f3;
   border: none;
   background-origin: border-box;
